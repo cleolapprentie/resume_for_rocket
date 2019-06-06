@@ -1,0 +1,221 @@
+html {
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 165%;
+    letter-spacing: 1px;
+}
+
+
+
+#petit-intro .fp-tableCell {
+    vertical-align: top;
+}
+
+
+.header {
+    background: #f4960f;
+    padding: 10px 30px;
+}
+
+.myself {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.myself img {
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    width: 80vw;
+    margin: 140px auto 0;
+    padding-bottom: 50px;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+}
+
+.intro a:hover {
+    border-bottom: 2px solid #000;
+}
+
+
+.introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    margin-bottom: 120px;
+    font-weight: 500;
+    font-size: 110%;
+    line-height: 180%;
+}
+
+.introduction div {
+    margin-left: 30px;
+}
+
+.introduction div:first-child {
+    margin-left: 0; 
+}
+
+.introduction i {
+    font-size: 110%;
+    padding-right: 10px;
+}
+
+.search {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.search a {
+    text-decoration: none;
+    color: #454545;
+}
+
+input {
+    outline: none;
+    border: 1px solid #f4960f;
+    padding: 10px 15px;
+    border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+    width: 40vw;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.rocket {
+    position: absolute;
+    top: 13px; right: 25px;
+}
+
+.input {
+    background: #f4960f;
+    padding: 6px 15px;
+    display: inline-block;
+    border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    color: rgba(255, 255, 255, 0.79);
+}
+
+
+
+
+.wrapper {
+    width: 70vw;
+    margin: 0 auto;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 500;
+    padding: 50px 0 0 0;
+}
+
+.wrapper h2 {
+    margin: 0 0 -10px 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrapper p {
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.line {
+    width: 700px;
+    border-top: 2px solid #000;
+    margin: -28px 0 70px 12px;
+}
+
+
+#portfolio h2 {
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.gradient-line {
+    width: 500px;
+    height: 15px;
+    background: -webkit-gradient(linear, left top, right top, from(#5c7658), to(transparent));
+    background: linear-gradient(to right, #5c7658, transparent);
+}
+
+.gradient-line-2 {
+    margin-top: 6px;
+    width: 300px;
+    height: 10px;
+    background: -webkit-gradient(linear, left top, right top, from(#5c7658), to(transparent));
+    background: linear-gradient(to right, #5c7658, transparent);
+}
+
+#portfolio .wrapper {
+    font-size: 90%;
+    margin-bottom: 50px;
+}
+
+.content {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 90%;
+}
+
+.content span {
+    font-size: 80%;
+    color: #454545;
+}
+
+.practice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+
+.preview {
+    max-width: 400px;
+    overflow: hidden;
+} 
+
+.preview:first-child {
+    margin-right: 20px;
+}
+
+.wrapper img {
+    width: 100%;
+    max-width: 400px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    vertical-align: bottom;
+}
+
+.wrapper img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.description {
+    margin-top: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+}
