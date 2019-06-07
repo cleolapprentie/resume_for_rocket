@@ -1,3 +1,11 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 html {
     font-size: 20px;
     font-family: 'Noto Sans TC', sans-serif;
@@ -15,6 +23,8 @@ html {
 .header {
     background: #f4960f;
     padding: 10px 30px;
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .myself {
@@ -34,7 +44,7 @@ html {
 .intro {
     width: 80vw;
     margin: 140px auto 0;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .intro a {
@@ -79,7 +89,7 @@ html {
 
 .search {
     position: relative;
-    width: 700px;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -91,26 +101,26 @@ html {
 input {
     outline: none;
     border: 1px solid #f4960f;
-    padding: 10px 15px;
-    border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-    width: 40vw;
+    padding: 10px 15px 10px 130px;
+    border-radius: 3px;
+	border-radius: 3px;
+    width: 100%;
     -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
+
 .rocket {
     position: absolute;
-    top: 13px; right: 25px;
+    top: 13px; right: 15px;
 }
 
 .input {
+    position: absolute;
     background: #f4960f;
     padding: 6px 15px;
     display: inline-block;
     border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
-    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     color: rgba(255, 255, 255, 0.79);
 }
 
@@ -122,11 +132,11 @@ input {
     margin: 0 auto;
     font-family: 'Noto Serif TC', serif;
     font-weight: 500;
-    padding: 50px 0 0 0;
+    padding: 50px 0 10px 0;
 }
 
 .wrapper h2 {
-    margin: 0 0 -10px 30px;
+    margin: 0 0 0px 30px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -136,17 +146,19 @@ input {
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 50%;
+    margin-top: 10px;
 }
 
 .line {
-    width: 700px;
+    width: 80%;
     border-top: 2px solid #000;
-    margin: -28px 0 70px 12px;
+    margin: -5px 0 70px 10px;
 }
 
 
 #portfolio h2 {
     padding-left: 50px;
+    padding-bottom: 15px;
     margin-top: 50px;
 }
 
@@ -174,7 +186,7 @@ input {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
     font-size: 90%;
 }
 
@@ -189,7 +201,7 @@ input {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .preview {
@@ -215,7 +227,70 @@ input {
 }
 
 .description {
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: 'Noto Sans TC', sans-serif;
     text-align: center;
+}
+
+#totop {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+
+#totop i {
+    font-size: 150%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;    
+    }
+    
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .header {
+        padding: 15px 30px;
+    }
+    
+    .intro {
+        margin-top: 80px;
+    }
+    
+    .introduction {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .introduction div {
+    }
+
+    .introduction div:first-child {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .search {
+        position: relative;
+        width: 60%;
+        margin: 80px auto 0 auto;
+    }
+    
+    .input {
+        padding: 7px 15px;
+    }
+    
+    input {
+        padding: 10px 15px 10px 110px;
+    }
 }
