@@ -104,18 +104,40 @@
                 </div>
 	        </div>
 	    </div>
+      
+        <div id="totop">
+                    <i class="fas fa-arrow-alt-circle-up"></i>
+        </div>
        
         <script type="text/javascript" src="fullpage.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-            anchors: ['page_1', 'page_2', 'page_3', 'page_4', 'page_5'],
-            sectionsColor: ['rgba(250, 185, 91, 0.3)', '#71a0a5', '#ffc6be', '#7fa99b', '#f6e79c'],
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['封面', '自我介紹', '為什麼想嘗試程式開發', '是否已經嘗試在寫程式', '練習作品'],
-            responsiveWidth: 900,
-            responsiveHeight: 680,
-            afterResponsive: function(isResponsive){}
+                anchors: ['page_1', 'page_2', 'page_3', 'page_4', 'page_5'],
+                sectionsColor: ['rgba(250, 185, 91, 0.3)', '#71a0a5', '#ffc6be', '#7fa99b', '#f6e79c'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['封面', '自我介紹', '為什麼想嘗試程式開發', '是否已經嘗試在寫程式', '練習作品'],
+                responsiveWidth: 900,
+                responsiveHeight: 680,
+                afterResponsive: function(isResponsive){}
+            });
+            
+             $(window).on('scroll', function(){
+                var $scrolltop = $(window).scrollTop();
+                $('body').toggleClass('scroll', ($scrolltop > 450));
+        
+                if ($scrolltop > 400) {
+                    $('#totop').fadeIn(400);
+                } else {
+                    $('#totop').stop().fadeOut(200);
+                }
+             });
+            
+            $('#totop').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: 0
+            }, 500);
             });
         </script>
     </body>
